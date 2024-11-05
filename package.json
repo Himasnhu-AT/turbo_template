@@ -1,0 +1,36 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Template",
+  "main": "index.js",
+  "scripts": {
+    "pre-commit": "pnpm format && pnpm lint && pnpm build && pnpm test",
+    "build": "turbo run build",
+    "build:backend": "turbo run build --filter=backend",
+    "build:frontend": "turbo run build --filter=www",
+    "dev": "turbo run dev",
+    "dev:backend": "turbo run dev --filter=backend",
+    "dev:frontend": "turbo run dev --filter=www",
+    "prod": "turbo run prod",
+    "prod:backend": "turbo run prod --filter=backend",
+    "prod:frontend": "turbo run prod --filter=www",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himasnhu-at/turbo_template.git"
+  },
+  "author": "Himasnhu-at",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himasnhu-at/turbo_template/issues"
+  },
+  "homepage": "https://github.com/himasnhu-at/turbo_template#readme",
+  "devDependencies": {
+    "turbo": "^2.2.3"
+  },
+  "packageManager": "pnpm@9.11.0"
+}
